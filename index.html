@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div>
+    <button id="but">Random</button>
+    <h1>Result</h1>
+  </div>  
+ 
+ 
+
+<script>
+  let btnRandom = document.querySelector('button');
+let result = document.querySelector('h1');
+ 
+ 
+let users = ['Marks', 'John', 'Jane', 'James', 'Mary', 'Peter', 'Simon', 'Ronald'];
+ 
+function getRandomNumber(min, max) {
+    let step1 = max - min + 1;
+    let step2 = Math.random() * step1;
+    let result = Math.floor(step2) + min;
+ 
+    return result;
+}
+ 
+btnRandom.addEventListener('click', () => {
+    let index = getRandomNumber(0, users.length-1);
+    result.innerText = users[index];
+});
+
+</script>
+</body>
+</html>

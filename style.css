@@ -1,0 +1,35 @@
+
+
+
+body {
+    background: linear-gradient(to right, #000000, #73a2f8, #000000);
+    text-align: center;
+    font-size: 40px;
+    
+
+}
+ 
+div {
+    display: inline-block;
+}
+ 
+button {
+    display: inline-block;
+    padding: 10px 20px;
+}
+#but{
+
+    color: yellow;
+    background:linear-gradient(to right, #1e1f1e, #383838, #222222);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+    #but:hover{
+        transition: 0.5s;
+        background-color: yellow;
+        color: rgb(0, 0, 0);
+        
+    }
